@@ -1,0 +1,19 @@
+syntax = "proto3";
+package vectorcopy;
+
+message VectorMap {
+    map<uint32,uint32> Vector = 1;
+}
+
+message VectorArray {
+    repeated uint32 Vector = 1;
+}
+
+message Elem {
+    uint32 Index = 1;
+    uint32 Value = 2;
+}
+
+message VectorList {
+    repeated Elem List=1;
+}
